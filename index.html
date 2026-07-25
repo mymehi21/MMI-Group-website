@@ -308,6 +308,20 @@ td.prod{font-weight:700;color:var(--ink)}
             <input id="prodSearch" type="search" oninput="onSearch()" data-i18n-ph="search_ph"></div>
           <div class="scount" id="scount"></div>
         </div>
+        <style>
+.pdf-cta{display:flex;align-items:center;gap:16px;max-width:540px;margin:2px 0 30px;padding:16px 20px;background:#fff;border:1px solid #e6dfd1;border-left:5px solid #c49a53;border-radius:12px;box-shadow:0 14px 34px -22px rgba(20,37,57,.2);text-decoration:none;transition:.2s}
+.pdf-cta:hover{transform:translateY(-3px);box-shadow:0 20px 44px -24px rgba(20,37,57,.34);border-color:#c49a53}
+.pdf-cta .ic{width:46px;height:46px;flex:none;border-radius:10px;background:#142539;display:grid;place-items:center;color:#fff;font-weight:800;font-size:.72rem}
+.pdf-cta .tx{flex:1;min-width:0}
+.pdf-cta .tx b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:600;color:#142539;font-size:1.08rem;line-height:1.15}
+.pdf-cta .tx span{font-size:.82rem;color:#66717c}
+.pdf-cta .ar{color:#8a6a2c;font-size:1.25rem;flex:none}
+</style>
+<a class="pdf-cta" href="catalogue.pdf" target="_blank" rel="noopener">
+          <span class="ic">PDF</span>
+          <span class="tx"><b>MMI Group Catalogue</b><span>PDF · 25 pages</span></span>
+          <span class="ar">↗</span>
+        </a>
         <div class="grid" id="catgrid"></div>
         <div class="noresult" id="noresult" style="display:none"></div>
       </div></section>
